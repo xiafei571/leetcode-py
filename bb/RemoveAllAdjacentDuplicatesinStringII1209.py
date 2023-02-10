@@ -23,7 +23,7 @@ class Solution:
                 stack[-1][1] += 1
             elif stack and stack[-1][0] != c:
                 # different char
-                if stack[-1][1] >= k:
+                if stack[-1][1] >= k: #改成while?
                     stack.pop()
                     if stack and stack[-1][0] == c:
                         stack[-1][1] += 1
